@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Kotoversum — котики с характером</title>
+	<meta name="description" content="Кототематический лендинг с анимацией: истории, галерея, факты и приглашение в сообщество." />
+	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Unbounded:wght@700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="styles.css" />
+	<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+	<script defer src="scripts.js"></script>
+</head>
+<body>
+	<header class="site-header" id="top">
+		<div class="container">
+			<a class="logo" href="#top"><span>Ko</span>toversum</a>
+			<nav class="nav" aria-label="Главное меню">
+				<a href="#features">Особенности</a>
+				<a href="#story">Истории</a>
+				<a href="#gallery">Галерея</a>
+				<a href="#cta" class="btn btn--sm">Вступить</a>
+			</nav>
+			<button class="burger" aria-label="Открыть меню" aria-expanded="false">
+				<span></span><span></span><span></span>
+			</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero" id="hero">
+			<img class="hero__bg" src="assets/pattern-paws.svg" alt="" aria-hidden="true" />
+			<div class="container hero__grid">
+				<div class="hero__copy">
+					<h1 class="split-lines">
+						Мир котов,<br />
+						которые выбирают <span class="accent">людей</span>
+					</h1>
+					<p class="lead">Мы собираем истории, кадры и факты о котах с характером. Присоединяйся — и пусть мур будет с тобой.</p>
+					<div class="hero__cta">
+						<a href="#cta" class="btn btn--lg">Присоединиться</a>
+						<a href="#gallery" class="btn btn--ghost btn--lg">Смотреть фото</a>
+					</div>
+					<div class="marquee" aria-hidden="true">
+						<div class="marquee__track">
+							<span>мур • хвосты • усы • лапки • характер • </span>
+							<span>мур • хвосты • усы • лапки • характер • </span>
+							<span>мур • хвосты • усы • лапки • характер • </span>
+							<span>мур • хвосты • усы • лапки • характер • </span>
+						</div>
+					</div>
+				</div>
+				<div class="hero__art">
+					<img class="hero__img" src="assets/hero-cat.png" alt="Кот с характером" />
+				</div>
+			</div>
+		</section>
+
+		<section class="features section" id="features">
+			<div class="container">
+				<h2 class="section__title split-lines">Почему коты — это стиль жизни</h2>
+				<div class="features__grid">
+					<div class="feature-card">
+						<h3>Утренний будильник</h3>
+						<p>Точно в 6:00. Без выходных. С функцией «лапка по лицу».</p>
+					</div>
+					<div class="feature-card">
+						<h3>Контроль качества</h3>
+						<p>Каждая коробка проверяется изнутри. Строго.</p>
+					</div>
+					<div class="feature-card">
+						<h3>Терапия мурчанием</h3>
+						<p>Научно доказано: мур повышает настроение на 146%.</p>
+					</div>
+					<div class="feature-card">
+						<h3>Зум-менеджмент</h3>
+						<p>Умеют выключать микрофон хвостом. И включать камеру.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="story section" id="story">
+			<div class="container story__grid">
+				<div class="story__media parallax" data-speed="0.15">
+					<img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=1400&auto=format&fit=crop" alt="Кот смотрит в окно" />
+				</div>
+				<div class="story__content">
+					<h2 class="split-lines">Истории с характером</h2>
+					<p>У каждого кота — своя легенда. Кто-то спас утюг от падения, кто-то — кактус от полива, а кто-то — нас от скуки. Мы собираем короткие истории и делимся лучшими.</p>
+					<ul class="ticks">
+						<li>Трогательные — для сердца</li>
+						<li>Смешные — для вечера</li>
+						<li>Полезные — для быта</li>
+					</ul>
+					<a class="btn" href="#cta">Поделиться историей</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="facts section">
+			<div class="container facts__grid">
+				<div class="fact">
+					<strong>24</strong>
+					<span>типа «мяу» различает опытный человек-кот</span>
+				</div>
+				<div class="fact">
+					<strong>3×</strong>
+					<span>быстрее заживают царапины от любви</span>
+				</div>
+				<div class="fact">
+					<strong>18</strong>
+					<span>подушечек лап оставят след в сердце</span>
+				</div>
+				<div class="fact">
+					<strong>∞</strong>
+					<span>количество фоток в галерее</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery section" id="gallery">
+			<div class="container">
+				<h2 class="section__title split-lines">Галерея настроений</h2>
+				<div class="gallery__grid">
+					<a class="gallery__item" href="https://images.unsplash.com/photo-1511044568932-338cba0ad803?q=80&w=1600&auto=format&fit=crop" target="_blank" rel="noreferrer">
+						<img src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?q=80&w=800&auto=format&fit=crop" alt="Кот лежит" />
+					</a>
+					<a class="gallery__item" href="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1600&auto=format&fit=crop" target="_blank" rel="noreferrer">
+						<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=800&auto=format&fit=crop" alt="Кот позирует" />
+					</a>
+					<a class="gallery__item" href="https://images.unsplash.com/photo-1510337550649-e0d62ca63fbe?q=80&w=1600&auto=format&fit=crop" target="_blank" rel="noreferrer">
+						<img src="https://images.unsplash.com/photo-1510337550649-e0d62ca63fbe?q=80&w=800&auto=format&fit=crop" alt="Кот в траве" />
+					</a>
+					<a class="gallery__item" href="https://images.unsplash.com/photo-1507149833265-60c372daea22?q=80&w=1600&auto=format&fit=crop" target="_blank" rel="noreferrer">
+						<img src="https://images.unsplash.com/photo-1507149833265-60c372daea22?q=80&w=800&auto=format&fit=crop" alt="Кот смотрит" />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta section" id="cta">
+			<div class="container cta__box">
+				<h2 class="split-lines">Присоединяйся к сообществу</h2>
+				<p>Получай лучшие истории и фотографии, участвуй в тематических неделях и делись своими хвостатыми буднями.</p>
+				<form class="cta__form" action="#" method="post" onsubmit="return false;">
+					<label>
+						<span class="visually-hidden">Email</span>
+						<input type="email" placeholder="Твой e-mail" required />
+					</label>
+					<button class="btn" type="submit">Вступить</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> Kotoversum. Сделано с любовью к котам.</p>
+		</div>
+	</footer>
+
+	<div class="cursor" aria-hidden="true"></div>
+</body>
+</html>
+
+
